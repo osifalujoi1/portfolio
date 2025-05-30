@@ -3,8 +3,8 @@
 
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /*=============== MENU SHOW ===============*/
 /* Validate if constant exists */
@@ -144,13 +144,13 @@ function showContactResume() {
     contactResume.forEach(section => section.style.display = "block");
     homeAbout.forEach(section => section.style.display = "none");
 }
- 
+
 //Show home, about, and resume
 function showHomeAbout() {
     const contactResume = document.querySelectorAll(".contact, .resume");
     const homeAbout = document.querySelectorAll(".home, .about");
 
-    contactResume.forEach(section => section.style.display = "none");
+    // contactResume.forEach(section => section.style.display = "none");
     homeAbout.forEach(section => section.style.display = "block");
 }
 
